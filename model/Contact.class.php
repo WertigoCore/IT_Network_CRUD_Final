@@ -16,7 +16,7 @@ class Contact
 		$this->conn = $db->getConn();
 	}
 
-	public function all() 
+	public function all()
 	{
 		$sql = "SELECT * FROM " . $this->table;
 		return $this->conn->query($sql);
