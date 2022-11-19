@@ -12,7 +12,7 @@ mb_internal_encoding("UTF-8");
 	<label>Město</label>
 	<input name="city" class="form-control" required>
 	<br>
-	<button class='btn btn-success' id="btn-save">Uložit</button>
+	<button class='btn btn-sm btn-success' id="btn-save">Uložit</button>
 </form>
 </div>
 </div>

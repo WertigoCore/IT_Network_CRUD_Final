@@ -11,7 +11,7 @@
 	<label>Město</label>
 	<input name="city" value="<?= $contact['city'] ?>" class="form-control">
 	<br>
-	<button id="btn-save" class="btn btn-success">Uložit</button>
+	<button id="btn-save" class="btn btn-sm btn-success">Uložit</button>
 </form>
 </div>
 </div>

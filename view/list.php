@@ -8,7 +8,7 @@ echo "<h1>Seznam kontaktů</h1>";
 if ($result->num_rows > 0) {
 	echo '<div class="container-fluid text-center"> ';
 
-	echo '<table  class="table table-condensed table-striped table-hover table-bordered">';
+	echo '<table  class="table table-condensed table-striped table-hover table-bordered table-sm">';
 	echo '<thead>';
               echo '<tr class="bg-danger">';
                 echo '<th class="table-secondary">Jméno</th>';
@@ -23,8 +23,8 @@ if ($result->num_rows > 0) {
 		echo "<td>" . $row["first_name"] . "</td>";
 		echo "<td>" . $row["second_name"] . "</td>";
 		echo "<td>" . $row["city"] . "</td>";
-		echo "<td> <a href='/?request=edit&id=" . $row["id"] . "'><button class='btn btn-success btn-edit' contact-id='" . $row["id"] . "'>Editovat</button></a> | ";
-		echo "<button class='btn btn-danger btn-destroy' contact-id='" . $row["id"] . "'>Odstranit</button></td>";
+		echo "<td> <a href='/?request=edit&id=" . $row["id"] . "'><button class='btn btn-sm btn-success btn-edit' contact-id='" . $row["id"] . "'>Editovat</button></a> | ";
+		echo "<button class='btn btn-sm btn-danger btn-destroy' contact-id='" . $row["id"] . "'>Odstranit</button></td>";
 	}
 	echo "</th>";
 	echo '</tbody>';
