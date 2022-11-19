@@ -1,4 +1,5 @@
 <?php
+mb_internal_encoding("UTF-8");
 include('view/partials/_head.php');
 echo "<div class='row'>";
 echo "<div class='col-lg-12'>";
@@ -22,7 +23,7 @@ if ($result->num_rows > 0) {
 		echo "<td>" . $row["first_name"] . "</td>";
 		echo "<td>" . $row["second_name"] . "</td>";
 		echo "<td>" . $row["city"] . "</td>";
-		echo "<td> <a href='/?request=edit&id=" . $row["id"] . "'><button class='btn btn-default btn-edit' contact-id='" . $row["id"] . "'>Editovat</button></a>";
+		echo "<td> <a href='/?request=edit&id=" . $row["id"] . "'><button class='btn btn-success btn-edit' contact-id='" . $row["id"] . "'>Editovat</button></a> | ";
 		echo "<button class='btn btn-danger btn-destroy' contact-id='" . $row["id"] . "'>Odstranit</button></td>";
 	}
 	echo "</th>";

@@ -1,4 +1,6 @@
-<?php include('partials/_head.php'); ?>
+<?php include('partials/_head.php'); 
+mb_internal_encoding("UTF-8");
+?>
 <h1>Přidání záznamu</h1>
 <form action='/?request=save' method="post">
 	<label>Jméno</label>

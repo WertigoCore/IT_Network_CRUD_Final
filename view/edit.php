@@ -1,4 +1,4 @@
-<?php include('partials/_head.php'); ?>
+<?php include('partials/_head.php'); mb_internal_encoding("UTF-8");?>
 <h1>Editace kontaktu</h1>
 <form action='/?request=update' method="post">
 	<input name="id" type="hidden" value="<?= $contact['id'] ?>">

@@ -1,5 +1,5 @@
 <?php
-
+mb_internal_encoding("UTF-8");
 /**
  * Trida pro pripojeni do databaza
  */
