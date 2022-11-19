@@ -13,7 +13,7 @@ if ($result->num_rows > 0) {
               echo '<tr class="bg-danger">';
                 echo '<th class="table-secondary">Jméno</th>';
                 echo '<th class="table-secondary">Příjmení</th>';
-                echo '<th class="table-secondary">Email</th>';
+                echo '<th class="table-secondary">Město</th>';
                 echo '<th class="table-secondary">Akce</th>';
               echo '</tr>';
            echo ' </thead>';
