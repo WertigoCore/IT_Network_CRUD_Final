@@ -31,7 +31,7 @@ if ($result->num_rows > 0) {
 	echo '</table>';
 	echo '</div> ';
 } else {
-	echo "Databáze neobsahuje žádné záznamy";
+	echo "Databáze neobsahuje žádné záznamy <br>";
 }
 
 echo "<a href='/?request=create'><button class='btn btn-default'>Nový kontakt</button></a>";
