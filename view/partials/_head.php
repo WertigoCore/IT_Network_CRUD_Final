@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Crud PHP</title>
+	<title>ITNetwork Basic CRUD using OOP/MVC</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
