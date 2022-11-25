@@ -16,9 +16,9 @@ switch ($request) {
 		break;
 
 	case 'save':
-		$contact->setFirstName(htmlspecialchars($_POST['first_name']));
-		$contact->setSecondName(htmlspecialchars($_POST['second_name']));
-		$contact->setCity(htmlspecialchars($_POST['city']));
+		$contact->setFirstName(htmlspecialchars(trim($_POST['first_name'])));
+		$contact->setSecondName(htmlspecialchars(trim($_POST['second_name'])));
+		$contact->setCity(htmlspecialchars(trim ($_POST['city'])));
 		if ($contact->isValid()) {
 			$contact->save();
 			header('Location:/?mensage=Kontakt uložen!');
@@ -33,17 +33,17 @@ switch ($request) {
 		break;
 
 	case 'update':
-		$contact->setFirstName(htmlspecialchars($_POST['first_name']));
-		$contact->setSecondName(htmlspecialchars($_POST['second_name']));
-		$contact->setCity(htmlspecialchars($_POST['city']));
+		$contact->setFirstName(htmlspecialchars(trim($_POST['first_name'])));
+		$contact->setSecondName(htmlspecialchars(trim($_POST['second_name'])));
+		$contact->setCity(htmlspecialchars(trim($_POST['city'])));
 		if ($contact->isValid()) {
-			$contact->update(htmlspecialchars($_POST['id']));
+			$contact->update(htmlspecialchars(trim($_POST['id'])));
 			header('Location:/?mensage=Kontakt upraven!');
 		}
 		break;
 
 	case 'destroy':
-		$contact = $contact->destroy(htmlspecialchars($_GET['id']));
+		$contact = $contact->destroy(htmlspecialchars(trim($_GET['id'])));
 		break;
 
 
