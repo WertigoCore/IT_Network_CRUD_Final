@@ -1,8 +1,8 @@
 <?php
 mb_internal_encoding("UTF-8");
-include('model/Db.class.php');
+//include('model/Db.class.php');
 
-class Contact
+class Contact extends Db
 {
 
 	private $first_name = '';
@@ -15,7 +15,7 @@ class Contact
 	{
 		$db = new Db;
 		$this->conn = $db->getConn();
-	}
+    }
 
 	public function all()
 	{
@@ -68,4 +68,5 @@ class Contact
 	{
 		$this->city = $city;
 	}
+
 }
