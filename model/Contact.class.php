@@ -1,6 +1,5 @@
 <?php
 mb_internal_encoding("UTF-8");
-//include('model/Db.class.php');
 
 class Contact extends Db
 {
